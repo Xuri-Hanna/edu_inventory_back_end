@@ -14,10 +14,8 @@ class PhongHoc extends Model
 
     public $timestamps = true; // nếu bạn bỏ timestamps trong migration thì để false
 
-    protected $fillable = [
-        'id',
-        'so_phong',
-        'vi_tri_phong',
-        'so_cho_ngoi',
+   protected $fillable = [
+    'id', 'so_phong', 'vi_tri_phong', 'so_cho_ngoi', 'trang_thai',  'gia_phong'
     ];
+
 }

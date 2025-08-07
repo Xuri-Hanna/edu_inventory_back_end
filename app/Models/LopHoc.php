@@ -23,6 +23,8 @@ class LopHoc extends Model
         'so_luong',
         'phong_hoc_id',
         'trang_thai',
+        'don_gia',
+        'so_buoi'
     ];
 
     public function monHoc()
