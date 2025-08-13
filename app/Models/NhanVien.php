@@ -16,6 +16,7 @@ class NhanVien extends Model
 
     protected $fillable = [
         'id',
+        'tai_khoan_id',
         'ho_ten',
         'cccd',
         'dia_chi',
@@ -36,4 +37,9 @@ class NhanVien extends Model
     {
         return $this->belongsTo(PhongBan::class, 'phong_ban_id', 'id');
     }
+     public function taiKhoan()
+    {
+        return $this->belongsTo(TaiKhoan::class, 'tai_khoan_id', 'id');
+    }
+
 }

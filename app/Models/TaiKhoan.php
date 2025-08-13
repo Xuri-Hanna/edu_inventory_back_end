@@ -16,5 +16,6 @@ class TaiKhoan extends Model
         'ID',
         'username',
         'password',
+        'trang_thai'
     ];
 }

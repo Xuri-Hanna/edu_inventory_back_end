@@ -16,6 +16,8 @@ class GiaoVien extends Model
 
     protected $fillable = [
         'id',
+        'tai_khoan_id',
+        'chuc_vu_id',
         'ho_ten',
         'cccd',
         'dia_chi',
@@ -28,5 +30,9 @@ class GiaoVien extends Model
     public function donViCongTac()
     {
         return $this->belongsTo(DonViCongTac::class, 'don_vi_cong_tac_id', 'id');
+    }
+      public function taiKhoan()
+    {
+        return $this->belongsTo(TaiKhoan::class, 'tai_khoan_id', 'id');
     }
 }
